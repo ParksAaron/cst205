@@ -1,0 +1,30 @@
+{% extends 'bootstrap/base.html' %}
+{% block title %}
+  Playlist Results
+{% endblock %}
+
+{% block content %}
+
+<!-- templates/pl.html -->
+
+<div class="container">
+  <h1>Playlist (so far)</h1>
+
+  <ul class="list-group">
+
+    {% for item in playlist %}
+
+      <li class="list-group-item">{{ item.song_title }}</li>
+      <ul>
+      	<li>{{item.song_artist}}</li>
+      </ul>
+
+    {% endfor %}
+
+  </ul>
+
+  <a href="{{ url_for('index') }}">Take me home</a>
+
+</div>
+
+{% endblock %}

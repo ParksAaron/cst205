@@ -1,0 +1,15 @@
+<!-- templates/home.html -->
+<div class="container">
+	<h1>Pictures</h1>
+	<a href={{url_for('pictures', id = images[0]['id'], title = images[0]['title'], user = images[0]['flickr_user'])}}>{{images[0]['title']}}</a>
+	<br>
+	<img src="images/{{images[0]['id']}}.jpg" width="200" class="img-responsive img-rounded" alt="">
+	<br>
+	<a href={{url_for('pictures', id = images[1]['id'], title = images[1]['title'], user = images[1]['flickr_user'])}}>{{images[1]['title']}}</a>
+	<br>
+	<img src="images/{{images[1]['id']}}.jpg" width="200" class="img-responsive img-rounded" alt="">
+	<br>
+	<a href={{url_for('pictures', id = images[2]['id'], title = images[2]['title'], user = images[2]['flickr_user'])}}>{{images[2]['title']}}</a>
+	<br>
+	<img src="images/{{images[2]['id']}}.jpg" width="200" class="img-responsive img-rounded" alt="">
+</div>
